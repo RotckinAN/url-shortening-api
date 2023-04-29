@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, ConfigProvider, Typography } from "antd";
+import { Button, ConfigProvider, Typography } from 'antd';
 const { Link } = Typography;
 
 function Header() {
@@ -7,7 +6,7 @@ function Header() {
       <header className="header">
          <div className="header__navContainer">
             <Link to="/">
-               <div className="header__logo"></div>
+               <div className="logo header__logo"></div>
             </Link>
             <nav className="header__navigate">
                <ul className="header__navigateList">
@@ -28,7 +27,7 @@ function Header() {
             <ConfigProvider
                theme={{
                   token: {
-                     colorPrimary: "hsl(180, 66%, 49%)",
+                     colorPrimary: 'hsl(180, 66%, 49%)',
                   },
                }}
             >

@@ -1,0 +1,33 @@
+@import '../../styles/colorSettings';
+
+.navigateLinks {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   min-width: 115px;
+}
+
+.navigateLinks__title {
+   font-weight: 700;
+   color: #fff;
+}
+
+.navigateLinks__list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.navigateLinks__listItem {
+   color: $grayishViolet;
+   text-decoration: none;
+   transition: color 0.25s linear;
+
+   &:hover {
+      cursor: pointer;
+      color: $cyan;
+   }
+}

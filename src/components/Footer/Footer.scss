@@ -1,0 +1,70 @@
+@import '../../styles/colorSettings';
+@import '../../styles/fontSettings';
+
+.footer {
+   font-family: $baseFont;
+   letter-spacing: -0.6px;
+   width: 100%;
+   max-width: 1440px;
+   padding: 70px 150px 75px;
+   box-sizing: border-box;
+   background-color: $veryDarkViolet;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__logo {
+   background-image: url('../../images/logo white.svg');
+}
+
+.footer__mainContainer {
+   display: flex;
+   gap: 60px;
+}
+
+.footer__navLinkContainer {
+   display: flex;
+   gap: 75px;
+}
+
+.footer__navIconContainer {
+   display: flex;
+   gap: 25px;
+}
+
+.footer__linkLogo {
+   width: 24px;
+   height: 24px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   transition: background-image 0.25s linear;
+
+   &_type_facebook {
+      background-image: url(../../images/icon-facebook.svg);
+
+      &:hover {
+         background-image: url('../../images/icon-facebook (копия).svg');
+      }
+   }
+   &_type_twitter {
+      background-image: url(../../images/icon-twitter.svg);
+
+      &:hover {
+         background-image: url('../../images/icon-twitter (копия).svg');
+      }
+   }
+   &_type_pinterset {
+      background-image: url(../../images/icon-pinterest.svg);
+
+      &:hover {
+         background-image: url('../../images/icon-pinterest (копия).svg');
+      }
+   }
+   &_type_instagram {
+      background-image: url(../../images/icon-instagram.svg);
+
+      &:hover {
+         background-image: url('../../images/icon-instagram (копия).svg');
+      }
+   }
+}

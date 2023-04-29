@@ -1,0 +1,33 @@
+/* colors */
+.navigateLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 115px;
+}
+
+.navigateLinks__title {
+  font-weight: 700;
+  color: #fff;
+}
+
+.navigateLinks__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navigateLinks__listItem {
+  color: hsl(257, 7%, 63%);
+  text-decoration: none;
+  transition: color 0.25s linear;
+}
+.navigateLinks__listItem:hover {
+  cursor: pointer;
+  color: hsl(180, 66%, 49%);
+}
+
+/*# sourceMappingURL=NavigateLinks.css.map */

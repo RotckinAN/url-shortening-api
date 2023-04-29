@@ -1,4 +1,5 @@
-@import "../../styles/colorSettings";
+@import '../../styles/colorSettings';
+@import '../../styles/fontSettings';
 
 @mixin fontSetting() {
    font-weight: 700;
@@ -16,27 +17,12 @@
    align-items: center;
    color: $grayishViolet;
    box-sizing: border-box;
-   margin: 0 auto;
 }
 
 .header__navContainer {
    display: flex;
    gap: 45px;
    align-items: center;
-}
-
-.header__logo {
-   background-image: url(../../images/logo.svg);
-   width: 121px;
-   height: 33px;
-   background-size: contain;
-   background-repeat: no-repeat;
-   opacity: 1;
-   transition: opacity 0.25s linear;
-
-   &:hover {
-      opacity: 0.9;
-   }
 }
 
 .header__navigateList {
@@ -63,7 +49,7 @@
 
 .header__button {
    @include fontSetting();
-   font-family: "Poppins", sans-serif;
+   font-family: $baseFont;
    height: 40px;
 
    &_type_text {
