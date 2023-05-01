@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const NavigateLinks = ({ title, navigateItems }) => {
    return (
       <nav className="navigateLinks">
@@ -15,6 +17,10 @@ const NavigateLinks = ({ title, navigateItems }) => {
          </ul>
       </nav>
    );
+};
+NavigateLinks.propTypes = {
+   title: PropTypes.string.isRequired,
+   navigateItems: PropTypes.array.isRequired,
 };
 
 export default NavigateLinks;

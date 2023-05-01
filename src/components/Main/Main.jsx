@@ -1,41 +1,13 @@
-import { Button, ConfigProvider } from 'antd';
-import mainImage from '../../images/illustration-working.svg';
+import MainTitlePart from '../MainTitlePart/MainTitlePart.jsx';
+import BoostPart from '../BoostPart/BoostPart.jsx';
+import StatisticsPart from '../StatisticsPart/StatisticsPart.jsx';
 
 const Main = () => {
    return (
       <main className="main">
-         <section className="main__titleSection">
-            <article className="main__titleContainer">
-               <h1 className="main__title">More than just shorter links</h1>
-               <p className="main__subTitle">
-                  Build your brand's recognition and get detailed insights on
-                  how your links are performing.
-               </p>
-               <ConfigProvider
-                  theme={{
-                     token: {
-                        colorPrimary: 'hsl(180, 66%, 49%)',
-                     },
-                  }}
-               >
-                  <Button
-                     className="main__mainButton"
-                     type="primary"
-                     shape="round"
-                     href={'#footer'}
-                  >
-                     Get Started
-                  </Button>
-               </ConfigProvider>
-            </article>
-            <div className="main__imageContainer">
-               <img
-                  src={mainImage}
-                  alt="main image"
-                  className="main__mainImage"
-               />
-            </div>
-         </section>
+         <MainTitlePart />
+         <StatisticsPart />
+         <BoostPart />
       </main>
    );
 };

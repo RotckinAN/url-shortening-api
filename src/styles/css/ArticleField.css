@@ -1,0 +1,49 @@
+/* colors */
+.articleField {
+  width: 360px;
+  height: 275px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 65px 35px 35px;
+  position: relative;
+  box-sizing: border-box;
+}
+.articleField:nth-child(n+2) {
+  margin-top: 45px;
+}
+.articleField:nth-child(n+3) {
+  margin-top: 90px;
+}
+
+.articleField__imageContainer {
+  position: absolute;
+  top: -46px;
+  left: 35px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleField__image {
+  width: 40px;
+  height: 40px;
+}
+
+.articleField__title {
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  padding: 15px 0 20px;
+}
+
+.articleField__paragraph {
+  color: hsl(257, 7%, 63%);
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+/*# sourceMappingURL=ArticleField.css.map */

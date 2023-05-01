@@ -1,14 +1,9 @@
 import { Typography } from 'antd';
 import NavigateLinks from '../NavigateLinks/NavigateLinks.jsx';
+import { FOOTERLINKS } from '../../utils/constants.js';
 const { Link } = Typography;
 
 const Footer = () => {
-   const data = {
-      Features: ['Link Shortening', 'Branded Links', 'Analytics'],
-      Resources: ['Blog', 'Developers', 'Support'],
-      Company: ['About', 'Our Team', 'Careers', 'Contact'],
-   };
-
    return (
       <footer className="footer" id="footer">
          <Link to="/">
@@ -17,16 +12,16 @@ const Footer = () => {
          <div className="footer__mainContainer">
             <div className="footer__navLinkContainer">
                <NavigateLinks
-                  title={Object.keys(data)[0]}
-                  navigateItems={data['Features']}
+                  title={Object.keys(FOOTERLINKS)[0]}
+                  navigateItems={FOOTERLINKS['Features']}
                />
                <NavigateLinks
-                  title={Object.keys(data)[1]}
-                  navigateItems={data['Resources']}
+                  title={Object.keys(FOOTERLINKS)[1]}
+                  navigateItems={FOOTERLINKS['Resources']}
                />
                <NavigateLinks
-                  title={Object.keys(data)[2]}
-                  navigateItems={data['Company']}
+                  title={Object.keys(FOOTERLINKS)[2]}
+                  navigateItems={FOOTERLINKS['Company']}
                />
             </div>
             <div className="footer__navIconContainer">

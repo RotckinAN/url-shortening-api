@@ -1,65 +1,11 @@
-/* colors */
 .main {
   width: 100%;
   max-width: 1440px;
-  padding: 25px 0 25px 150px;
+  padding: 25px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-}
-
-.main__titleSection {
-  min-height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px 0 60px 0;
-}
-
-.main__titleContainer {
-  width: 600px;
-}
-
-.main__title {
-  font-weight: 700;
-  color: hsl(260, 8%, 14%);
-  font-size: 77px;
-}
-
-.main__imageContainer {
-  overflow: hidden;
-  width: 630px;
-}
-
-.main__subTitle {
-  color: hsl(257, 7%, 63%);
-  font-size: 20px;
-  letter-spacing: 1.1px;
-  line-height: 38px;
-}
-
-.main__mainButton {
-  width: 200px;
-  height: 60px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: -0.6px;
-  margin-top: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.main__mainImage {
-  width: 733px;
-  height: 482px;
-  background-repeat: no-repeat;
-  position: relative;
-  right: -5px;
 }
 
 /*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,23 @@
+@import '../../styles/colorSettings';
+
+.boostPart {
+   background-color: $darkViolet;
+   background-image: url('../../images/bg-boost-desktop.svg');
+   width: 100%;
+   max-width: 1440px;
+   padding: 70px 150px 75px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.boostPart__title {
+   color: white;
+   font-size: 38px;
+   line-height: 36px;
+   font-weight: 700;
+}

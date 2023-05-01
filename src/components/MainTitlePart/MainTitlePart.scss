@@ -1,0 +1,41 @@
+@import '../../styles/colorSettings';
+
+.mainTitlePart__titleSection {
+   min-height: 500px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 35px 0 60px 150px;
+   box-sizing: border-box;
+}
+
+.mainTitlePart__titleContainer {
+   width: 600px;
+}
+
+.mainTitlePart__title {
+   font-weight: 700;
+   color: $veryDarkViolet;
+   font-size: 77px;
+}
+
+.mainTitlePart__imageContainer {
+   overflow: hidden;
+   width: 630px;
+}
+
+.mainTitlePart__subTitle {
+   color: $grayishViolet;
+   font-size: 20px;
+   letter-spacing: 1.1px;
+   line-height: 38px;
+}
+
+.mainTitlePart__mainImage {
+   width: 733px;
+   height: 482px;
+   background-repeat: no-repeat;
+   position: relative;
+   right: -5px;
+}
