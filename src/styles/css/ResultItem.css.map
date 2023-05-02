@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../_colorSettings.scss","../../components/ResultItem/ResultItem.scss","../_fontSettings.scss"],"names":[],"mappings":"AAAA;ACGA;EACG;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGH;EACG;EACA;EACA;;;AAGH;EACG;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACG,OD7BC;EC8BD;;;AAIN;EACG;EACA;EACA,aCtCQ;EDuCR;EACA;EACA","file":"ResultItem.css"}

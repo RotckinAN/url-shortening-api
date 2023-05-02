@@ -1,0 +1,43 @@
+@import '../../styles/colorSettings';
+@import '../../styles/fontSettings';
+
+.resultItem {
+   background-color: white;
+   border-radius: 10px;
+   padding: 20px 30px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.resultItem__textContainer {
+   display: flex;
+   justify-content: space-between;
+   width: calc(100% - 130px);
+}
+
+.resultItem__paragraph {
+   font-size: 20px;
+   letter-spacing: 0.2px;
+   font-weight: 500;
+   max-width: calc(100% * 0.55);
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+
+   &_type_short {
+      color: $cyan;
+      max-width: calc(100% * 0.4);
+   }
+}
+
+.resultItem__button {
+   width: 105px;
+   height: 40px;
+   font-family: $baseFont;
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: -0.6px;
+}

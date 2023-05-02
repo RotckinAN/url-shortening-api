@@ -1,0 +1,12 @@
+@import '../../styles/colorSettings';
+
+.resultPart {
+   background-color: $gray;
+   width: 100%;
+   padding: 0 150px 20px 150px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+}

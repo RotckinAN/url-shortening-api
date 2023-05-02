@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&display=swap');
 
 @import url(./css/App.css);
 @import url(./css/ArticleField.css);
 @import url(./css/BoostPart.css);
+@import url(./css/CustomButton.css);
 @import url(./css/Footer.css);
-@import url(./css/GetStartedButton.css);
 @import url(./css/Header.css);
+@import url(./css/InputField.css);
 @import url(./css/Main.css);
 @import url(./css/MainTitlePart.css);
 @import url(./css/NavigateLinks.css);
+@import url(./css/ResultItem.css);
+@import url(./css/ResultPart.css);
 @import url(./css/StatisticsPart.css);

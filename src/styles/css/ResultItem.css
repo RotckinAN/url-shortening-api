@@ -1,0 +1,42 @@
+/* colors */
+.resultItem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.resultItem__textContainer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 130px);
+}
+
+.resultItem__paragraph {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resultItem__paragraph_type_short {
+  color: hsl(180, 66%, 49%);
+  max-width: 40%;
+}
+
+.resultItem__button {
+  width: 105px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+}
+
+/*# sourceMappingURL=ResultItem.css.map */

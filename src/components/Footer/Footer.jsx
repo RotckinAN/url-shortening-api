@@ -5,7 +5,7 @@ const { Link } = Typography;
 
 const Footer = () => {
    return (
-      <footer className="footer" id="footer">
+      <footer className="footer">
          <Link to="/">
             <div className="logo footer__logo"></div>
          </Link>

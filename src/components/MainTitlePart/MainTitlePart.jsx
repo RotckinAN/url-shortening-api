@@ -1,5 +1,5 @@
 import mainImage from '../../images/illustration-working.svg';
-import GetStartedButton from '../GetStartedButton/GetStartedButton.jsx';
+import CustomButton from '../CustomButton/CustomButton.jsx';
 
 const MainTitlePart = () => {
    return (
@@ -12,7 +12,14 @@ const MainTitlePart = () => {
                Build your brand's recognition and get detailed insights on how
                your links are performing.
             </p>
-            <GetStartedButton />
+            <CustomButton
+               shape="round"
+               marginTop="32px"
+               buttonText="Get Started"
+               narrow={true}
+               hashLink={true}
+               link="#inputField"
+            />
          </article>
          <div className="mainTitlePart__imageContainer">
             <img

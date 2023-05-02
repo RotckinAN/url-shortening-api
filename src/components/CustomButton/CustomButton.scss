@@ -1,13 +1,10 @@
 @import '../../styles/fontSettings';
 
 .getStartedButton {
-   width: 200px;
-   height: 60px;
    font-family: $baseFont;
    font-weight: 700;
    font-size: 20px;
    letter-spacing: -0.6px;
-   margin-top: 32px;
    display: flex;
    align-items: center;
    justify-content: center;
