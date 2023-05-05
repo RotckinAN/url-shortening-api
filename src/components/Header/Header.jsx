@@ -1,5 +1,7 @@
-import { Button, ConfigProvider, Typography } from 'antd';
-const { Link } = Typography;
+import { Link } from 'react-router-dom';
+import NavigateList from '../NavigateList/NavigateList.jsx';
+import UserButtons from '../UserButtons/UserButtons.jsx';
+import { IoMenuSharp } from 'react-icons/io5';
 
 function Header() {
    return (
@@ -8,38 +10,10 @@ function Header() {
             <Link to="/">
                <div className="logo header__logo"></div>
             </Link>
-            <nav className="header__navigate">
-               <ul className="header__navigateList">
-                  <li className="header__navigateListItem">Features</li>
-                  <li className="header__navigateListItem">Pricing</li>
-                  <li className="header__navigateListItem">Resourses</li>
-               </ul>
-            </nav>
+            <NavigateList />
+            <IoMenuSharp className="header__burgerIcon" />
          </div>
-         <div className="header__buttonContainer">
-            <Button
-               className="header__button header__button_type_text"
-               type="text"
-               shape="round"
-            >
-               Login
-            </Button>
-            <ConfigProvider
-               theme={{
-                  token: {
-                     colorPrimary: 'hsl(180, 66%, 49%)',
-                  },
-               }}
-            >
-               <Button
-                  className="header__button header__button_type_primary"
-                  type="primary"
-                  shape="round"
-               >
-                  Sign Up
-               </Button>
-            </ConfigProvider>
-         </div>
+         <UserButtons />
       </header>
    );
 }

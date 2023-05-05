@@ -1,0 +1,28 @@
+@import '../../styles/colorSettings';
+@import '../../styles/fontSettings';
+
+@mixin fontSetting() {
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: -0.6px;
+}
+
+.userButtons {
+   display: flex;
+   gap: 10px;
+}
+
+.userButtons__button {
+   @include fontSetting();
+   font-family: $baseFont;
+   height: 40px;
+
+   &_type_text {
+      width: 90px;
+      color: $grayishViolet;
+   }
+
+   &_type_primary {
+      width: 105px;
+   }
+}

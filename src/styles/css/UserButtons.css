@@ -1,0 +1,22 @@
+/* colors */
+.userButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.userButtons__button {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  font-family: "Poppins", sans-serif;
+  height: 40px;
+}
+.userButtons__button_type_text {
+  width: 90px;
+  color: hsl(257, 7%, 63%);
+}
+.userButtons__button_type_primary {
+  width: 105px;
+}
+
+/*# sourceMappingURL=UserButtons.css.map */

@@ -15,7 +15,6 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   color: $grayishViolet;
    box-sizing: border-box;
 }
 
@@ -25,39 +24,15 @@
    align-items: center;
 }
 
-.header__navigateList {
-   display: flex;
-   list-style: none;
-   margin: 0 auto;
-   padding: 0;
-   gap: 30px;
-}
-
-.header__navigateListItem {
+.header__burgerIcon {
+   color: $grayishViolet;
+   width: 30px;
+   height: 30px;
+   opacity: 1;
    transition: color 0.25s linear;
 
    &:hover {
-      color: hsl(0, 0%, 0%);
       cursor: pointer;
-   }
-}
-
-.header__buttonContainer {
-   display: flex;
-   gap: 10px;
-}
-
-.header__button {
-   @include fontSetting();
-   font-family: $baseFont;
-   height: 40px;
-
-   &_type_text {
-      width: 90px;
-      color: $grayishViolet;
-   }
-
-   &_type_primary {
-      width: 105px;
+      color: $veryDarkViolet;
    }
 }
