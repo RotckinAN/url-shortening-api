@@ -16,7 +16,7 @@ const MainTitlePart = () => {
                shape="round"
                marginTop="32px"
                buttonText="Get Started"
-               narrow={true}
+               isNarrow={true}
                hashLink={true}
                link="#inputField"
             />

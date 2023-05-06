@@ -1,0 +1,31 @@
+/* colors */
+.mainMenu {
+  position: absolute;
+  background-color: hsl(257, 27%, 26%);
+  top: 75px;
+  left: 0;
+  width: calc(100% - 50px);
+  margin: 0 25px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 45px 25px;
+  box-sizing: border-box;
+  z-index: 10;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+.mainMenu_type_opened {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (min-width: 750px) {
+  .mainMenu_type_opened {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*# sourceMappingURL=MainMenu.css.map */

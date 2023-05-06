@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../_colorSettings.scss","../../components/BoostPart/BoostPart.scss"],"names":[],"mappings":"AAAA;ACEA;EACG,kBDDU;ECEV;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGH;EACG;EACA;EACA;EACA","file":"BoostPart.css"}
+{"version":3,"sourceRoot":"","sources":["../_colorSettings.scss","../../components/BoostPart/BoostPart.scss"],"names":[],"mappings":"AAAA;ACEA;EACG,kBDDU;ECEV;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EAdH;IAeM;IACA;;EAEA;IACG;;;;AAKT;EACG;EACA;EACA;EACA;EACA;;AAEA;EAPH;IAQM","file":"BoostPart.css"}

@@ -8,21 +8,73 @@
    align-items: center;
    padding: 35px 0 60px 150px;
    box-sizing: border-box;
+
+   @media screen and (max-width: 1250px) {
+      flex-direction: column-reverse;
+      padding: 0 100px 60px;
+      gap: 30px;
+   }
+
+   @media screen and (max-width: 950px) {
+      padding: 0 50px 40px;
+   }
+
+   @media screen and (max-width: 600px) {
+      padding: 0 0 20px 20px;
+   }
 }
 
 .mainTitlePart__titleContainer {
    width: 600px;
+
+   @media screen and (max-width: 1250px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+   }
+
+   @media screen and (max-width: 750px) {
+      width: 100%;
+   }
+
+   @media screen and (max-width: 600px) {
+      padding: 15px 20px 0 0;
+   }
 }
 
 .mainTitlePart__title {
    font-weight: 700;
    color: $veryDarkViolet;
    font-size: 77px;
+
+   @media screen and (max-width: 1250px) {
+      text-align: center;
+   }
+
+   @media screen and (max-width: 750px) {
+      font-size: 66px;
+   }
+
+   @media screen and (max-width: 600px) {
+      font-size: 40px;
+      line-height: 48px;
+   }
 }
 
 .mainTitlePart__imageContainer {
    overflow: hidden;
    width: 630px;
+
+   @media screen and (max-width: 1250px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   @media screen and (max-width: 600px) {
+      justify-content: flex-start;
+   }
 }
 
 .mainTitlePart__subTitle {
@@ -30,6 +82,22 @@
    font-size: 20px;
    letter-spacing: 1.1px;
    line-height: 38px;
+
+   @media screen and (max-width: 1250px) {
+      text-align: center;
+   }
+
+   @media screen and (max-width: 750px) {
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 34px;
+   }
+
+   @media screen and (max-width: 600px) {
+      letter-spacing: -0.05px;
+      line-height: 30px;
+      padding-top: 15px;
+   }
 }
 
 .mainTitlePart__mainImage {
@@ -38,4 +106,16 @@
    background-repeat: no-repeat;
    position: relative;
    right: -5px;
+
+   @media screen and (max-width: 1250px) {
+      position: static;
+   }
+
+   @media screen and (max-width: 750px) {
+      height: 400px;
+   }
+
+   @media screen and (max-width: 600px) {
+      height: 320px;
+   }
 }

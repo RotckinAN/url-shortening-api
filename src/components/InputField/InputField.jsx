@@ -70,7 +70,7 @@ const InputField = () => {
                shape="default"
                marginTop="0"
                buttonText="Shotren It!"
-               narrow={false}
+               isNarrow={false}
                hashLink={false}
             />
          </form>

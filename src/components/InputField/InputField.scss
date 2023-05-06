@@ -21,6 +21,18 @@
       left: 0;
       background-color: white;
    }
+
+   @media screen and (max-width: 1250px) {
+      padding: 0 100px 25px;
+   }
+
+   @media screen and (max-width: 950px) {
+      padding: 0 50px 25px;
+   }
+
+   @media screen and (max-width: 600px) {
+      padding: 65px 20px 20px;
+   }
 }
 
 .inputField__form {
@@ -35,6 +47,19 @@
    border-radius: 10px;
    z-index: 5;
    box-sizing: border-box;
+
+   @media screen and (max-width: 950px) {
+      flex-direction: column;
+   }
+
+   @media screen and (max-width: 950px) {
+      padding: 22px;
+   }
+
+   @media screen and (max-width: 600px) {
+      gap: 15px;
+      background-image: url('../../images/bg-shorten-mobile.svg');
+   }
 }
 
 .inputField__label {
@@ -70,6 +95,13 @@
          color: $red;
       }
    }
+
+   @media screen and (max-width: 950px) {
+      height: 50px;
+      padding-left: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+   }
 }
 
 .inputField__errorMessage {
@@ -84,5 +116,10 @@
 
    &_type_active {
       display: block;
+   }
+
+   @media screen and (max-width: 600px) {
+      bottom: -14px;
+      font-size: 12px;
    }
 }

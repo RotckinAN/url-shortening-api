@@ -2,18 +2,33 @@ import { Link } from 'react-router-dom';
 import NavigateList from '../NavigateList/NavigateList.jsx';
 import UserButtons from '../UserButtons/UserButtons.jsx';
 import { IoMenuSharp } from 'react-icons/io5';
+import { useState } from 'react';
+import MainMenu from '../MainMenu/MainMenu.jsx';
 
 function Header() {
+   const [isMainMenuOpen, setIsMainMenuOpen] = useState(false);
+
    return (
       <header className="header">
          <div className="header__navContainer">
             <Link to="/">
                <div className="logo header__logo"></div>
             </Link>
-            <NavigateList />
-            <IoMenuSharp className="header__burgerIcon" />
+            <NavigateList isHidden={true} />
+            <button
+               className="header__menuButton"
+               onClick={() =>
+                  !isMainMenuOpen
+                     ? setIsMainMenuOpen(true)
+                     : setIsMainMenuOpen(false)
+               }
+            >
+               <IoMenuSharp className="header__burgerIcon" />
+            </button>
          </div>
-         <UserButtons />
+         <UserButtons isHidden={true} />
+
+         <MainMenu isOpen={isMainMenuOpen} />
       </header>
    );
 }

@@ -6,12 +6,13 @@ const CustomButton = ({
    shape,
    marginTop,
    buttonText,
-   narrow,
+   isNarrow,
    hashLink,
    link,
 }) => {
-   const width = narrow ? '200px' : '230px';
-   const height = narrow ? '60px' : '65px';
+   const buttonClassName = `getStartedButton ${
+      isNarrow ? 'getStartedButton_type_narrow' : 'getStartedButton_type_wide'
+   }`;
 
    return (
       <ConfigProvider
@@ -22,12 +23,10 @@ const CustomButton = ({
          }}
       >
          <Button
-            className="getStartedButton"
+            className={buttonClassName}
             type="primary"
             style={{
                marginTop: `${marginTop}`,
-               width: `${width}`,
-               height: `${height}`,
                borderRadius: `${shape === 'round' ? '30px' : '10px'}`,
             }}
             htmlType="submit"
@@ -45,7 +44,7 @@ const CustomButton = ({
 };
 
 CustomButton.propTypes = {
-   narrow: PropTypes.bool.isRequired,
+   isNarrow: PropTypes.bool.isRequired,
    shape: PropTypes.string.isRequired,
    marginTop: PropTypes.string.isRequired,
    buttonText: PropTypes.string.isRequired,

@@ -8,5 +8,25 @@
   justify-content: center;
   text-decoration: none;
 }
+.getStartedButton_type_narrow {
+  width: 200px;
+  height: 60px;
+}
+.getStartedButton_type_wide {
+  width: 230px;
+  height: 65px;
+}
+@media screen and (max-width: 950px) {
+  .getStartedButton_type_wide {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .getStartedButton_type_wide {
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}
 
 /*# sourceMappingURL=CustomButton.css.map */

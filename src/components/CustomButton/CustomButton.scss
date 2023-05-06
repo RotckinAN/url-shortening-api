@@ -9,4 +9,28 @@
    align-items: center;
    justify-content: center;
    text-decoration: none;
+
+   &_type_narrow {
+      width: 200px;
+      height: 60px;
+   }
+
+   &_type_wide {
+      width: 230px;
+      height: 65px;
+   }
+
+   @media screen and (max-width: 950px) {
+      &_type_wide {
+         width: 100%;
+      }
+   }
+
+   @media screen and (max-width: 600px) {
+      &_type_wide {
+         height: 50px;
+         font-size: 18px;
+         letter-spacing: 0;
+      }
+   }
 }

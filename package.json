@@ -8,13 +8,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.4.6",
     "axios": "^1.4.0",
     "copy-to-clipboard": "^3.3.3",
+    "gh-pages": "^5.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -39,5 +42,5 @@
     "singleQuote": true,
     "tabWidth": 3
   },
-  "homepage": "."
+  "homepage": "https://rotckinan.github.io/url-shortening-api/"
 }

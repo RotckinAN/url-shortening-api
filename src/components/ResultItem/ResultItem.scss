@@ -10,12 +10,35 @@
    align-items: center;
    justify-content: space-between;
    box-sizing: border-box;
+   position: relative;
+
+   @media screen and (max-width: 950px) {
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px;
+
+      &::before {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 52px;
+         left: 0;
+         top: 0;
+         border-bottom: solid 1px $gray;
+      }
+   }
 }
 
 .resultItem__textContainer {
    display: flex;
    justify-content: space-between;
    width: calc(100% - 130px);
+
+   @media screen and (max-width: 950px) {
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+   }
 }
 
 .resultItem__paragraph {
@@ -31,6 +54,11 @@
       color: $cyan;
       max-width: calc(100% * 0.4);
    }
+
+   @media screen and (max-width: 950px) {
+      max-width: 100%;
+      font-size: 16px;
+   }
 }
 
 .resultItem__button {
@@ -40,4 +68,8 @@
    font-weight: 700;
    font-size: 16px;
    letter-spacing: -0.6px;
+
+   @media screen and (max-width: 950px) {
+      width: 100%;
+   }
 }

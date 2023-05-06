@@ -13,6 +13,15 @@
    align-items: center;
    background-repeat: no-repeat;
    background-size: cover;
+
+   @media screen and (max-width: 600px) {
+      padding: 100px 20px 90px;
+      background-image: url('../../images/bg-boost-mobile.svg');
+
+      & .getStartedButton_type_narrow {
+         margin-top: 16px !important;
+      }
+   }
 }
 
 .boostPart__title {
@@ -20,4 +29,9 @@
    font-size: 38px;
    line-height: 36px;
    font-weight: 700;
+   text-align: center;
+
+   @media screen and (max-width: 600px) {
+      font-size: 26px;
+   }
 }

@@ -2,19 +2,26 @@
 
 .articleField {
    width: 360px;
-   height: 275px;
+   min-height: 275px;
    border-radius: 8px;
    background-color: white;
    padding: 65px 35px 35px;
    position: relative;
    box-sizing: border-box;
 
-   &:nth-child(n + 2) {
-      margin-top: 45px;
+   @media screen and (min-width: 1250px) {
+      &:nth-child(n + 2) {
+         margin-top: 45px;
+      }
+
+      &:nth-child(n + 3) {
+         margin-top: 90px;
+      }
    }
 
-   &:nth-child(n + 3) {
-      margin-top: 90px;
+   @media screen and (max-width: 600px) {
+      width: 330px;
+      min-height: 270px;
    }
 }
 
@@ -29,6 +36,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
+
+   @media screen and (max-width: 1250px) {
+      left: 134px;
+   }
+
+   @media screen and (max-width: 600px) {
+      left: 119px;
+   }
 }
 
 .articleField__image {
@@ -40,6 +55,10 @@
    font-size: 23px;
    letter-spacing: -0.5px;
    padding: 15px 0 20px;
+
+   @media screen and (max-width: 1250px) {
+      text-align: center;
+   }
 }
 
 .articleField__paragraph {
@@ -47,4 +66,8 @@
    font-size: 16px;
    line-height: 26px;
    letter-spacing: -0.5px;
+
+   @media screen and (max-width: 1250px) {
+      text-align: center;
+   }
 }

@@ -1,21 +1,34 @@
 @import '../../styles/colorSettings';
 @import '../../styles/fontSettings';
 
-@mixin fontSetting() {
-   font-weight: 700;
-   font-size: 16px;
-   letter-spacing: -0.6px;
-}
-
 .userButtons {
    display: flex;
    gap: 10px;
+
+   &_type_mainMenu {
+      flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+
+      & .userButtons__button_type_text:hover {
+         color: $grayishViolet !important;
+      }
+   }
+
+   @media screen and (max-width: 750px) {
+      &_type_hidden {
+         display: none;
+      }
+   }
 }
 
 .userButtons__button {
-   @include fontSetting();
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: -0.6px;
    font-family: $baseFont;
    height: 40px;
+   z-index: 5;
 
    &_type_text {
       width: 90px;
@@ -24,5 +37,12 @@
 
    &_type_primary {
       width: 105px;
+   }
+
+   &_type_mainMenu {
+      font-size: 20px;
+      color: white;
+      height: 50px;
+      width: 100%;
    }
 }

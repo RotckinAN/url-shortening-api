@@ -1,13 +1,22 @@
 import { Button, ConfigProvider } from 'antd';
+import PropTypes from 'prop-types';
 
-const UserButtons = () => {
+const UserButtons = ({ isHidden, forMainMenu }) => {
+   const userButtonsClassName = `userButtons ${
+      isHidden ? 'userButtons_type_hidden' : ''
+   } ${forMainMenu ? 'userButtons_type_mainMenu' : ''}`;
+   const userButtonClassName = `userButtons__button userButtons__button_type_text ${
+      forMainMenu ? 'userButtons__button_type_mainMenu' : ''
+   }`;
+   const userButtonPrimaryClassName = `userButtons__button userButtons__button_type_primary ${
+      forMainMenu
+         ? 'userButtons__button_type_mainMenu userButtons__button_type_wide'
+         : ''
+   }`;
+
    return (
-      <div className="userButtons">
-         <Button
-            className="userButtons__button userButtons__button_type_text"
-            type="text"
-            shape="round"
-         >
+      <div className={userButtonsClassName}>
+         <Button className={userButtonClassName} type="text" shape="round">
             Login
          </Button>
          <ConfigProvider
@@ -18,7 +27,7 @@ const UserButtons = () => {
             }}
          >
             <Button
-               className="userButtons__button userButtons__button_type_primary"
+               className={userButtonPrimaryClassName}
                type="primary"
                shape="round"
             >
@@ -27,6 +36,11 @@ const UserButtons = () => {
          </ConfigProvider>
       </div>
    );
+};
+
+UserButtons.propTypes = {
+   isHidden: PropTypes.bool,
+   forMainMenu: PropTypes.bool,
 };
 
 export default UserButtons;

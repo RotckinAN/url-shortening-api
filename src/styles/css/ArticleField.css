@@ -1,18 +1,26 @@
 /* colors */
 .articleField {
   width: 360px;
-  height: 275px;
+  min-height: 275px;
   border-radius: 8px;
   background-color: white;
   padding: 65px 35px 35px;
   position: relative;
   box-sizing: border-box;
 }
-.articleField:nth-child(n+2) {
-  margin-top: 45px;
+@media screen and (min-width: 1250px) {
+  .articleField:nth-child(n+2) {
+    margin-top: 45px;
+  }
+  .articleField:nth-child(n+3) {
+    margin-top: 90px;
+  }
 }
-.articleField:nth-child(n+3) {
-  margin-top: 90px;
+@media screen and (max-width: 600px) {
+  .articleField {
+    width: 330px;
+    min-height: 270px;
+  }
 }
 
 .articleField__imageContainer {
@@ -27,6 +35,16 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1250px) {
+  .articleField__imageContainer {
+    left: 134px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .articleField__imageContainer {
+    left: 119px;
+  }
+}
 
 .articleField__image {
   width: 40px;
@@ -38,12 +56,22 @@
   letter-spacing: -0.5px;
   padding: 15px 0 20px;
 }
+@media screen and (max-width: 1250px) {
+  .articleField__title {
+    text-align: center;
+  }
+}
 
 .articleField__paragraph {
   color: hsl(257, 7%, 63%);
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.5px;
+}
+@media screen and (max-width: 1250px) {
+  .articleField__paragraph {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=ArticleField.css.map */

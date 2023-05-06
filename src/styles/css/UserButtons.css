@@ -3,6 +3,19 @@
   display: flex;
   gap: 10px;
 }
+.userButtons_type_mainMenu {
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+}
+.userButtons_type_mainMenu .userButtons__button_type_text:hover {
+  color: hsl(257, 7%, 63%) !important;
+}
+@media screen and (max-width: 750px) {
+  .userButtons_type_hidden {
+    display: none;
+  }
+}
 
 .userButtons__button {
   font-weight: 700;
@@ -10,6 +23,7 @@
   letter-spacing: -0.6px;
   font-family: "Poppins", sans-serif;
   height: 40px;
+  z-index: 5;
 }
 .userButtons__button_type_text {
   width: 90px;
@@ -17,6 +31,12 @@
 }
 .userButtons__button_type_primary {
   width: 105px;
+}
+.userButtons__button_type_mainMenu {
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=UserButtons.css.map */

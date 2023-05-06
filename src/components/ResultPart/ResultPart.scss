@@ -9,4 +9,16 @@
    flex-direction: column;
    gap: 20px;
    align-items: center;
+
+   @media screen and (max-width: 1250px) {
+      padding: 0 100px 20px;
+   }
+
+   @media screen and (max-width: 950px) {
+      padding: 0 50px 20px;
+   }
+
+   @media screen and (max-width: 600px) {
+      padding: 0 20px 20px;
+   }
 }

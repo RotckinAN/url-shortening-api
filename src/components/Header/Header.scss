@@ -16,23 +16,51 @@
    justify-content: space-between;
    align-items: center;
    box-sizing: border-box;
+   position: relative;
+
+   @media screen and (max-width: 1250px) {
+      padding: 25px 100px;
+   }
+
+   @media screen and (max-width: 950px) {
+      padding: 20px 50px;
+   }
+
+   @media screen and (max-width: 600px) {
+      padding: 35px 20px 25px;
+   }
 }
 
 .header__navContainer {
    display: flex;
    gap: 45px;
    align-items: center;
+
+   @media screen and (max-width: 750px) {
+      width: 100%;
+      justify-content: space-between;
+   }
+}
+
+.header__menuButton {
+   border: none;
+   background-color: transparent;
+   padding: 0;
 }
 
 .header__burgerIcon {
    color: $grayishViolet;
-   width: 30px;
-   height: 30px;
-   opacity: 1;
+   width: 34px;
+   height: 34px;
    transition: color 0.25s linear;
+   display: none;
 
    &:hover {
       cursor: pointer;
       color: $veryDarkViolet;
+   }
+
+   @media screen and (max-width: 750px) {
+      display: block;
    }
 }
