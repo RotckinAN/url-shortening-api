@@ -17,17 +17,26 @@ const NavigateList = ({ isHidden, forMainMenu }) => {
       <nav className={navigateClassName}>
          <ul className={navigateListClassName}>
             <li>
-               <Link className={navigateListItemClassName} to={'/'}>
+               <Link
+                  className={navigateListItemClassName}
+                  to={'url-shortening-api/'}
+               >
                   Features
                </Link>
             </li>
             <li>
-               <Link className={navigateListItemClassName} to={'/'}>
+               <Link
+                  className={navigateListItemClassName}
+                  to={'url-shortening-api/'}
+               >
                   Pricing
                </Link>
             </li>
             <li>
-               <Link className={navigateListItemClassName} to={'/'}>
+               <Link
+                  className={navigateListItemClassName}
+                  to={'url-shortening-api/'}
+               >
                   Resourses
                </Link>
             </li>
