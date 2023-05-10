@@ -25,16 +25,16 @@ const Footer = () => {
                />
             </div>
             <div className="footer__navIconContainer">
-               <Link to="url-shortening-api/">
+               <Link to={'url-shortening-api/'}>
                   <div className="footer__linkLogo footer__linkLogo_type_facebook"></div>
                </Link>
-               <Link to="url-shortening-api/">
+               <Link to={'url-shortening-api/'}>
                   <div className="footer__linkLogo footer__linkLogo_type_twitter"></div>
                </Link>
-               <Link to="url-shortening-api/">
+               <Link to={'url-shortening-api/'}>
                   <div className="footer__linkLogo footer__linkLogo_type_pinterset"></div>
                </Link>
-               <Link to="url-shortening-api/">
+               <Link to={'url-shortening-api/'}>
                   <div className="footer__linkLogo footer__linkLogo_type_instagram"></div>
                </Link>
             </div>
