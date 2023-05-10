@@ -8,7 +8,10 @@ const NavigateLinks = ({ title, navigateItems }) => {
             {navigateItems.map((navigateItem, index) => {
                return (
                   <li key={index}>
-                     <a href="/" className="navigateLinks__listItem">
+                     <a
+                        href="url-shortening-api/"
+                        className="navigateLinks__listItem"
+                     >
                         {navigateItem}
                      </a>
                   </li>
