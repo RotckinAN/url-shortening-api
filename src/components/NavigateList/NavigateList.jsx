@@ -17,17 +17,17 @@ const NavigateList = ({ isHidden, forMainMenu }) => {
       <nav className={navigateClassName}>
          <ul className={navigateListClassName}>
             <li>
-               <Link className={navigateListItemClassName} to={'#'}>
+               <Link className={navigateListItemClassName} to={'/'}>
                   Features
                </Link>
             </li>
             <li>
-               <Link className={navigateListItemClassName} to={'#'}>
+               <Link className={navigateListItemClassName} to={'/'}>
                   Pricing
                </Link>
             </li>
             <li>
-               <Link className={navigateListItemClassName} to={'#'}>
+               <Link className={navigateListItemClassName} to={'/'}>
                   Resourses
                </Link>
             </li>
