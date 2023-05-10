@@ -11,12 +11,13 @@ function Header() {
    return (
       <header className="header">
          <div className="header__navContainer">
-            <Link to="/">
+            <Link to="/" aria-label="logo">
                <div className="logo header__logo"></div>
             </Link>
             <NavigateList isHidden={true} />
             <button
                className="header__menuButton"
+               title="burgerMenuButton"
                onClick={() =>
                   !isMainMenuOpen
                      ? setIsMainMenuOpen(true)
