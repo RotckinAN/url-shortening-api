@@ -1,17 +1,11 @@
 import isURL from 'validator/lib/isURL.js';
-import { useDispatch, useSelector } from 'react-redux';
-import {
-   getUrl,
-   setErrorMessage,
-   setValue,
-} from '../../store/inputValueSlice.js';
 import CustomButton from '../CustomButton/CustomButton.jsx';
 import axios from 'axios';
+import store from '../../store/store.js';
+import { observer } from 'mobx-react-lite';
 
-const InputField = () => {
-   const dispatch = useDispatch();
-   const { value, errorMessage } = useSelector((state) => state.inputValues);
-
+const InputField = observer(() => {
+   const { value, errorMessage, setValue, getUrl, setErrorMessage } = store;
    const inputClassName = `inputField__input ${
       errorMessage ? 'inputField__input_type_error' : ''
    }`;
@@ -30,18 +24,16 @@ const InputField = () => {
             );
 
             if (response.data.ok) {
-               dispatch(
-                  getUrl({
-                     origin: value,
-                     short: response.data.result.full_short_link,
-                  })
-               );
+               getUrl({
+                  origin: value,
+                  short: response.data.result.full_short_link,
+               });
             }
          } catch (err) {
             console.error(err);
          }
       } else {
-         dispatch(setErrorMessage());
+         setErrorMessage();
       }
    };
 
@@ -60,9 +52,7 @@ const InputField = () => {
                   placeholder="Shorten a link here..."
                   type="url"
                   value={value}
-                  onChange={(evt) =>
-                     dispatch(setValue({ value: evt.target.value }))
-                  }
+                  onChange={setValue}
                />
                <span className={errorMessageClassName}>Please add a link</span>
             </label>
@@ -76,6 +66,6 @@ const InputField = () => {
          </form>
       </section>
    );
-};
+});
 
 export default InputField;

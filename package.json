@@ -13,17 +13,18 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.4.6",
     "axios": "^1.4.0",
     "copy-to-clipboard": "^3.3.3",
     "gh-pages": "^5.0.0",
+    "mobx": "^6.9.0",
+    "mobx-react-lite": "^3.4.3",
     "normalize.css": "^8.0.1",
+    "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.0",
     "react-router-hash-link": "^2.4.3",
     "validator": "^13.9.0"

@@ -1,8 +1,9 @@
-import { useSelector } from 'react-redux';
 import ResultItem from '../ResultItem/ResultItem.jsx';
+import store from '../../store/store.js';
+import { observer } from 'mobx-react-lite';
 
-const ResultPart = () => {
-   const { resultValue } = useSelector((state) => state.inputValues);
+const ResultPart = observer(() => {
+   const { resultValue } = store;
 
    return (
       <article className="resultPart">
@@ -17,6 +18,6 @@ const ResultPart = () => {
          })}
       </article>
    );
-};
+});
 
 export default ResultPart;
